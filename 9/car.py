@@ -28,3 +28,22 @@ class Car:
         """Увеличваем показания одометра на заданное значение"""
         self.odometer_reading += miles
 
+
+class Battery:
+    def __init__(self, size: int = 75):
+        self.size = size
+
+    def describe_battery(self):
+        print(f'This car has a {self.size}-kWh battery')
+
+
+class ElectricCar(Car):
+
+    def __init__(self, make: str, model: str, year: int):
+        super().__init__(make, model, year)
+        self.battery = Battery()
+
+
+my_tesla = ElectricCar('tesla', 'model s', 2019)
+print(my_tesla.get_descriptive_name())
+my_tesla.battery.describe_battery()
