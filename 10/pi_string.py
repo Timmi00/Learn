@@ -1,10 +1,17 @@
-file_name: str = 'pi_digits.txt'
+file_name: str = 'programming.txt'
 with open(file_name) as file_object:
-    lines: list = file_object.readlines()
+    lines: str = file_object.read()
+    print(lines)
+
 
 pi_string: str = ''
 for line in lines:
-    pi_string += line.strip()
-
+    print(f'{line}', end='')
+    pi_string += line
 print(pi_string)
-print(len(pi_string))
+
+# birthday: str = input()
+# if birthday in pi_string:
+#     print('yes')
+# else:
+#     print('no')
