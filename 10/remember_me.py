@@ -10,7 +10,11 @@ def get_stored_username():
     except FileNotFoundError:
         return None
     else:
-        return username
+        answer: str = input(f'Your name is {username} ?')
+        if answer == 'yes':
+            return username
+        else:
+            return None
 
 
 def get_new_user():
