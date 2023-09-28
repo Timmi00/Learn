@@ -14,8 +14,9 @@ class AnonymousSurvey:
         """Save answer"""
         self.responses.append(new_response)
 
-    def show_result(self):
+    def show_results(self):
         """Print all answers"""
         print('Survey results:')
         for response in self.responses:
             print(f'- {response}')
+
