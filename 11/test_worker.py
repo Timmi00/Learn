@@ -1,14 +1,14 @@
 import unittest
-from worker import Emploee
+from worker import Employee
 from random import randint
 
 
-class TestEmploee(unittest.TestCase):
-    """Test for Emploee class"""
+class TestEmployee(unittest.TestCase):
+    """Test for Employee class"""
 
     def setUp(self) -> None:
         """Make class instance"""
-        self.my_worker = Emploee('Alex', 'Spam', 500)
+        self.my_worker = Employee('Alex', 'Spam', 500)
 
     def test_give_default_raise(self):
         """Check correct raising"""

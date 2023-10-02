@@ -1,4 +1,4 @@
-class Emploee:
+class Employee:
     """Base worker model"""
 
     def __init__(
